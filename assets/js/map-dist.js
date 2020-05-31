@@ -218,6 +218,39 @@ function initMap() {
 
     });
 
+
+    $('.nav-link').on('click', function (e) {
+        e.preventDefault();
+        deleteMarkers();
+
+        let dataTipe = $(this).data('tip');
+        //console.log(dataTipe);
+
+        if (dataTipe == 'todos') {
+            $('.tecnioo-card').removeClass('d-none');
+            recorrePorAsignar();
+            recorreAsignados();
+        } else {
+            $('.tecnioo-card').each(function () {
+                $(this).removeClass('d-none');
+                let checkData = $(this).find('.custom-checkbox input').data('tip');
+
+                if (checkData != dataTipe) {
+                    $(this).addClass('d-none');
+                }else {
+                    var checkboxLat = $(this).find('.bk-marker').data('lat'),
+                        checkboxLng = $(this).find('.bk-marker').data('lng'),
+                        checkboxId = $(this).find('.bk-marker').data('id'),
+                        checkboxLoc = $(this).find('.bk-marker').data('loc');
+                    createMarker(new google.maps.LatLng(checkboxLat, checkboxLng), 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png', checkboxId, checkboxLoc, map);
+                }
+
+            })
+        }
+
+
+    })
+
     /*Cambio de fecha*/
 
     $('#FechaAsignacion').on('dp.change', function (e) {
@@ -330,22 +363,3 @@ function registroPuntos() {
     });
     $('.tecnioo-biglist--puntos').text(count);
 }
-
-$('.nav-link').on('click', function (e) {
-    e.preventDefault();
-    let dataTipe = $(this).data('tip');
-    console.log(dataTipe);
-
-    if( dataTipe == 'todos' ){
-        $('.tecnioo-card').removeClass('d-none');
-    } else {
-        $('.tecnioo-card').each(function () {
-            $(this).removeClass('d-none');
-            let checkData = $(this).find('.custom-checkbox input').data('tip');
-            if (checkData != dataTipe) {
-                $(this).addClass('d-none');
-            }
-        })
-    }
-
-})
