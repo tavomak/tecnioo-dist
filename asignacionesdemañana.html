@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Asignaciones del día</title>
+    <meta content="Asignaciones del día" property="og:title">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="images/webclip.png" rel="apple-touch-icon">
+  </head>
+  <body>
+    <nav class="tecnioo-navbar navbar bg-primary px-2 flex-row"><a class="navbar-brand tecnioo-navbar--wrap" href="home.html"><img class="tecnioo-navbar--wrap__img" src="./assets/img/avatar-2.png" alt="Tecnioo"></a>
+      <div class="navbar-nav-scroll">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item"><a class="nav-link text-white px-2" href="./llamados.html">Llamados</a>
+            <ul class="navbar-nav flex-row"></ul>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link text-white px-2 dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ruta Camioneta</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="./programacion.html">Programación</a><a class="dropdown-item" href="#">Consulta de cierres</a></div>
+          </li>
+          <li class="nav-item"><a class="nav-link text-white px-2" href="./llamados.html">Validaciones</a></li>
+        </ul>
+      </div>
+      <ul class="navbar-nav flex-row ml-md-auto">
+        <li class="nav-item dropdown"><a class="nav-item nav-link dropdown-toggle px-4 text-white" href="#" id="cientMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Mantenedores</a>
+          <div class="dropdown-menu dropdown-menu-right dropright" aria-labelledby="cientMenu"><a class="dropdown-item dropdown-toggle dropdown-submenu" href="#" id="cientSubMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="nav-label dropright">Muestra 9</span><span class="caret"></span></a>
+            <div class="dropdown-menu"><a class="dropdown-item" href="#">Maestra 91</a><a class="dropdown-item" href="#">Maestra 92</a><a class="dropdown-item" href="#">Maestra 93</a>
+            </div><a class="dropdown-item" href="#">Maestra 1</a><a class="dropdown-item" href="#">Maestra 2</a><a class="dropdown-item" href="#">Maestra 3</a><a class="dropdown-item" href="#">Maestra 4</a><a class="dropdown-item" href="#">Maestra 5</a><a class="dropdown-item" href="#">Maestra 6</a><a class="dropdown-item" href="#">Maestra 7</a><a class="dropdown-item" href="#">Maestra 8</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-item nav-link dropdown-toggle text-white" href="#" id="cientProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-user-circle pr-2"></i>Hola david.s@gmail.com</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="cientMenu"><a class="dropdown-item" href="#"> Cerrar Sesión</a></div>
+        </li>
+      </ul>
+    </nav>
+    <main class="content-wrapper">
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-4 col-lg-3 col-xl-2 bg-grey pt-5 pb-3 min-h-100">
+            <div class="input-group input-group-sm mb-4">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="#step2SelectClientType"><i class="fas fa-search"></i></label>
+                <input class="form-control" type="text" placeholder="Buscar Fecha">
+              </div>
+            </div>
+            <h4> <b>Vigente</b></h4><a class="select-day d-block bg-primary text-white" href="#">
+              <div class="d-flex justify-content-between my-2"><span class="px-1">Mañana</span><span class="px-1">800 pts</span></div></a><a class="select-day d-block" href="#">
+              <div class="d-flex justify-content-between my-2"><span class="px-1">Hoy</span><span class="px-1">7080 pts</span></div></a>
+            <hr>
+            <div class="py-4">
+              <h6>Marzo 2020</h6>
+              <hr><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Lun 09</span><span class="px-1">7800 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Dom 08</span><span class="px-1">Sin Asignación</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Sab 07</span><span class="px-1">3800 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Vie 06</span><span class="px-1">8800 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Jue 05</span><span class="px-1">9800 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Mie 04</span><span class="px-1">10500 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Lun 03</span><span class="px-1">1100 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Dom 02</span><span class="px-1">Sin Asignación</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Sab 01</span><span class="px-1">Sin Asignación</span></div></a>
+            </div>
+            <div class="py-4">
+              <h6>Febrero 2020</h6>
+              <hr><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Lun 31</span><span class="px-1">7800 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Dom 30</span><span class="px-1">Sin Asignación</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Sab 29</span><span class="px-1">3800 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Vie 28</span><span class="px-1">8800 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Jue 27</span><span class="px-1">9800 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Mie 26</span><span class="px-1">10500 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Lun 25</span><span class="px-1">1100 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Dom 24</span><span class="px-1">Sin Asignación</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Sab 23</span><span class="px-1">Sin Asignación</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Vie 22</span><span class="px-1">8800 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Jue 21</span><span class="px-1">9800 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Mie 20</span><span class="px-1">10500 pts</span></div></a><a class="select-day d-block" href="#">
+                <div class="d-flex justify-content-between my-2"><span class="px-1">Lun 19</span><span class="px-1">1100 pts</span></div></a>
+            </div>
+          </div>
+          <div class="col-8 col-lg-9 col-xl-10 pt-5 pb-3">
+            <ul class="d-flex justify-content-between align-items-baseline text-center mb-0">
+              <li>
+                <h4>Mañana 10 de Marzo</h4>
+              </li>
+              <li>
+                <h4>10</h4>
+                <p><small>Pts programados</small></p>
+              </li>
+              <li>
+                <h4>32</h4>
+                <p><small>Nº Llamados</small></p>
+              </li>
+              <li>
+                <h4>7.080</h4>
+                <p><small>Pts programados</small></p>
+              </li>
+              <li>
+                <h4>6.100</h4>
+                <p><small>Pts Completados</small></p>
+              </li>
+              <li>
+                <h4>86%</h4>
+                <p><small>Cumplimento</small></p>
+              </li>
+              <li>
+                <button class="btn btn-sm btn-outline-primary">
+                   Actualizar <i class="fas fa-sync-alt"></i></button>
+                <p><small>Última actualización</small><br><small>26/02/1010 19:02 hrs</small></p>
+              </li>
+            </ul>
+            <hr>
+            <ul class="d-flex justify-content-between align-items-baseline text-center mb-0">
+              <li>
+                <div class="input-group input-group-sm mb-4">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="#step2SelectClientType"><i class="fas fa-search"></i></label>
+                    <input class="form-control" type="text" placeholder="Buscar">
+                  </div>
+                </div>
+              </li>
+              <li class="d-flex"><span class="mr-4"><small>  Zona TCM</small></span>
+                <select class="form-control">
+                  <option>Todos</option>
+                  <option>Zona TCM 15</option>
+                  <option>Zona TCM 16</option>
+                  <option>Zona TCM 17</option>
+                  <option>Zona TCM 18</option>
+                  <option>Zona TCM 19</option>
+                  <option>Zona TCM 20</option>
+                  <option>Zona TCM 21</option>
+                  <option>Zona TCM 22</option>
+                  <option>Zona TCM 23</option>
+                  <option>Zona TCM 24</option>
+                  <option>Zona TCM 25</option>
+                  <option>Zona TCM 26</option>
+                  <option>Zona TCM 27</option>
+                </select>
+              </li>
+            </ul>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Técnico</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Zona</th>
+                    <th scope="col">Nº de Llamados</th>
+                    <th scope="col">Nº de Locales</th>
+                    <th scope="col">Pts Programados</th>
+                    <th scope="col">Ptos Completados</th>
+                    <th scope="col">Cumplimiento</th>
+                    <th scope="col">Hora Inicio</th>
+                    <th scope="col">Hora Término</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr> 
+                    <td><i class="fas fa-user-circle mr-2"></i><span>Jorge Sosa</span></td>
+                    <td><span class="tecnioo-card--title__status d-inline-block bg-info"></span><span>Camioneta</span></td>
+                    <td> <b>Santiago</b></td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>1200</td>
+                    <td>920</td>
+                    <td>76%</td>
+                    <td>08:03 hrs</td>
+                    <td>19:32 hrs</td>
+                  </tr>
+                  <tr> 
+                    <td><i class="fas fa-user-circle mr-2"></i><span>Juan Pérez</span></td>
+                    <td><span class="tecnioo-card--title__status d-inline-block bg-secondary"></span><span>Mantención</span></td>
+                    <td> <b>Santiago</b></td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>1200</td>
+                    <td>920</td>
+                    <td>76%</td>
+                    <td>08:03 hrs</td>
+                    <td>19:32 hrs</td>
+                  </tr>
+                  <tr> 
+                    <td><i class="fas fa-user-circle mr-2"></i><span>Alberto Rivera</span></td>
+                    <td><span class="tecnioo-card--title__status d-inline-block bg-info"></span><span>Camioneta</span></td>
+                    <td> <b>Santiago</b></td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>1200</td>
+                    <td>920</td>
+                    <td>76%</td>
+                    <td>08:03 hrs</td>
+                    <td>19:32 hrs</td>
+                  </tr>
+                  <tr> 
+                    <td><i class="fas fa-user-circle mr-2"></i><span>Edmindo Perez</span></td>
+                    <td><span class="tecnioo-card--title__status d-inline-block bg-info"></span><span>Camioneta</span></td>
+                    <td> <b>Santiago</b></td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>1200</td>
+                    <td>920</td>
+                    <td>76%</td>
+                    <td>08:03 hrs</td>
+                    <td>19:32 hrs</td>
+                  </tr>
+                  <tr> 
+                    <td><i class="fas fa-user-circle mr-2"></i><span>Iván Zambrano</span></td>
+                    <td><span class="tecnioo-card--title__status d-inline-block bg-info"></span><span>Camioneta</span></td>
+                    <td> <b>Santiago</b></td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>1200</td>
+                    <td>920</td>
+                    <td>76%</td>
+                    <td>08:03 hrs</td>
+                    <td>19:32 hrs</td>
+                  </tr>
+                  <tr> 
+                    <td><i class="fas fa-user-circle mr-2"></i><span>Pedro Coronado</span></td>
+                    <td><span class="tecnioo-card--title__status d-inline-block bg-info"></span><span>Camioneta</span></td>
+                    <td> <b>Santiago</b></td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>1200</td>
+                    <td>920</td>
+                    <td>76%</td>
+                    <td>08:03 hrs</td>
+                    <td>19:32 hrs</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <nav class="py-4" aria-label="Page navigation">
+              <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true"><<</span></a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">>></span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="assets/js/jquery.validate.min-dist.js"></script>
+    <script src="assets/js/additional-methods.min-dist.js"></script>
+    <script src="assets/js/rut-dist.js"></script>
+    <script src="assets/js/main-dist.js"></script>
+  </body>
+</html>
