@@ -20,11 +20,15 @@ $(function () {
     }
     //Selecciona todos los cheboxes en las tarjetas de llamados
     $('#selectAllcheckbox').click(function () {
-        if ($(this).is(':checked')) {
+        let findAllCheckboxes = $('.tecnioo-card').find('.custom-control-input');
+        $(this).is(':checked') 
+            ? findAllCheckboxes.attr('checked', true)
+            : findAllCheckboxes.attr('checked', false)
+        /* if ($(this).is(':checked')) {
             $('.tecnioo-card').find('.custom-control-input').attr('checked', true);
         } else {
             $('.tecnioo-card').find('.custom-control-input').attr('checked', false);
-        }
+        } */
     });
     if ($.isFunction($.fn.fancybox)) {
         $(".fancybox").fancybox({

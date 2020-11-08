@@ -76,5 +76,12 @@ $(function () {
         }
     });
 
+    $('#selectAllReprogramCheckbox').on('change', function(){
+        let findAllCheckboxes = $('.allReprogramCheckbox').find('.custom-control-input');
+        $(this).is(':checked') 
+            ? findAllCheckboxes.attr('checked', true)
+            : findAllCheckboxes.attr('checked', false)
+
+    });
 
 }); 
